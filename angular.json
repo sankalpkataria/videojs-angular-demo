@@ -30,7 +30,9 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/video.js/dist/video.min.js"
+            ]
           },
           "configurations": {
             "production": {

@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "~11.0.4",
     "@angular/common": "~11.0.4",
@@ -21,6 +21,7 @@
     "@angular/router": "~11.0.4",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
+    "video.js": "^7.10.2",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
