@@ -31,7 +31,8 @@
               "src/styles.css"
             ],
             "scripts": [
-              "./node_modules/video.js/dist/video.min.js"
+              "./node_modules/video.js/dist/video.min.js",
+              "./node_modules/videojs-seek-buttons/dist/videojs-seek-buttons.min.js"
             ]
           },
           "configurations": {

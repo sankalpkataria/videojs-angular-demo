@@ -15,6 +15,12 @@ export class AppComponent {
     sources: [{
       src: 'https://d2zihajmogu5jn.cloudfront.net/bipbop-advanced/bipbop_16x9_variant.m3u8',
       type: 'application/x-mpegURL'
-    }]
+    }],
+    plugins: {
+      seekButtons: {
+        forward: 10,
+        back: 10
+      }
+    }
   };
 }
