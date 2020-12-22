@@ -8,17 +8,6 @@ interface Breakpoint {
     huge: number;
 }
 
-interface Hotkeys {
-    fullscreenKey?: Function;
-    muteKey?: Function;
-    playPauseKey?: Function;
-}
-
-interface UserActions {
-    doubleClick?: boolean | Function;
-    hotkeys?: boolean | Function | Hotkeys;
-}
-
 interface Source {
     src: string;
     type: string;
@@ -62,6 +51,6 @@ export interface VideoJsOptions {
     suppressNotSupportedError?: boolean;
     techCanOverridePoster?: boolean;
     techOrder?: Array<string>;
-    userActions?: UserActions;
+    userActions?: any;
     'vtt.js'?: string;
 }
