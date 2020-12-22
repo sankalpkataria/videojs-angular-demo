@@ -6,6 +6,8 @@ The branches used are as follows:
 
 - `feature/basic-videojs-setup` - as the name suggests, this branch contains the very basic setup for videojs.
   
+- `feature/user-actions-hotkeys` - this branch contains example for listening and performing actions on press of different keyboard keys.
+  
 - `main` - this branch contains the merge of all feature branches.
 
 ## How to use
