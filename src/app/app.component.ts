@@ -16,6 +16,12 @@ export class AppComponent {
       src: 'https://d2zihajmogu5jn.cloudfront.net/bipbop-advanced/bipbop_16x9_variant.m3u8',
       type: 'application/x-mpegURL'
     }],
+    plugins: {
+      seekButtons: {
+        forward: 10,
+        back: 10
+      }
+    },
     userActions: {
       doubleClick: true, // to toggle full screen on double click
       hotkeys: function (event: any) {

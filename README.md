@@ -8,6 +8,8 @@ The branches used are as follows:
   
 - `feature/user-actions-hotkeys` - this branch contains example for listening and performing actions on press of different keyboard keys.
   
+- `feature/seek-plugin` - this branch demonstrate addition and usage of seek plugin
+  
 - `main` - this branch contains the merge of all feature branches.
 
 ## How to use
