@@ -22,6 +22,7 @@
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "video.js": "^7.10.2",
+    "videojs-seek-buttons": "^1.6.0",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
