@@ -8,6 +8,8 @@ The branches used are as follows:
   
 - `feature/user-actions-hotkeys` - this branch contains example for listening and performing actions on press of different keyboard keys.
   
+- `feature/custom-components` - this branch contains example for adding custom components to the video player. this branch adds a custom title bar and a button component.
+  
 - `main` - this branch contains the merge of all feature branches.
 
 ## How to use
