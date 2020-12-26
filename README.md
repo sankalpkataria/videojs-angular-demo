@@ -12,6 +12,8 @@ The branches used are as follows:
   
 - `feature/custom-components` - this branch contains example for adding custom components to the video player. this branch adds a custom title bar and a button component.
   
+- `feature/player-theme` - this branch demonstrates usage of different videojs themes.
+  
 - `main` - this branch contains the merge of all feature branches.
 
 ## How to use
