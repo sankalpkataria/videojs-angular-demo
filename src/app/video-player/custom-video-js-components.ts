@@ -1,4 +1,4 @@
-declare const videojs: any;
+import { videoJs } from './videojs';
 
 class CustomVideoJsComponent {
   private static _instance: CustomVideoJsComponent = new CustomVideoJsComponent();
@@ -14,8 +14,8 @@ class CustomVideoJsComponent {
   }
 
   private createTitleComponent() {
-    const videoJsComponent = videojs.getComponent('Component');
-    return videojs.extend(videoJsComponent, {
+    const videoJsComponent = videoJs.getComponent('Component');
+    return videoJs.extend(videoJsComponent, {
       constructor: function (_: any, options: any) {
         videoJsComponent.apply(this, arguments);
         if (options.text) {
@@ -23,20 +23,20 @@ class CustomVideoJsComponent {
         }
       },
       createEl: function () {
-        return videojs.dom.createEl('div', {
+        return videoJs.dom.createEl('div', {
           className: 'vjs-title-bar',
         });
       },
       updateTextContent: function (text: string) {
-        videojs.dom.emptyEl(this.el());
-        videojs.dom.appendContent(this.el(), text);
+        videoJs.dom.emptyEl(this.el());
+        videoJs.dom.appendContent(this.el(), text);
       },
     });
   }
 
   private createButtonComponent() {
-    const Button = videojs.getComponent('Button');
-    return videojs.extend(Button, {
+    const Button = videoJs.getComponent('Button');
+    return videoJs.extend(Button, {
       constructor: function (player: any, options: any) {
         if (options.show === undefined) {
           options.show = false;
@@ -48,7 +48,7 @@ class CustomVideoJsComponent {
         });
       },
       createEl: function () {
-        return videojs.dom.createEl(
+        return videoJs.dom.createEl(
           'button',
           {
             className: 'vjs-custom-button',
@@ -73,12 +73,12 @@ class CustomVideoJsComponent {
 
   registerTitleComponent() {
     const TitleBar = this.createTitleComponent();
-    videojs.registerComponent('TitleBar', TitleBar);
+    videoJs.registerComponent('TitleBar', TitleBar);
   }
 
   registerCustomButton() {
     const CustomButton = this.createButtonComponent();
-    videojs.registerComponent('CustomButton', CustomButton);
+    videoJs.registerComponent('CustomButton', CustomButton);
   }
 }
 

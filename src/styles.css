@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~video.js/dist/video-js.css';
 @import '~videojs-seek-buttons/dist/videojs-seek-buttons.css';
+@import './app/video-player/seek-plugin/styles.css';
 
 .vjs-title-bar {
     font-size: 2.0em;

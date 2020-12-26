@@ -1,0 +1,18 @@
+@import url(https://fonts.googleapis.com/css?family=Material+Icons);
+.video-js .vjs-custom-seek-button {
+    font-family: 'Material Icons';
+    font-size: 1.4em;
+    width: 40px;
+    cursor: pointer;
+}
+
+/* for content refer https://github.com/google/material-design-icons/tree/master/font */
+.video-js .vjs-custom-seek-button.seek-backward::before {
+    content: '\e020';
+}
+.video-js .vjs-custom-seek-button.seek-forward::before {
+    content: '\e01f';
+}
+.video-js .vjs-custom-seek-button.no-content::before {
+    content: none !important;
+}

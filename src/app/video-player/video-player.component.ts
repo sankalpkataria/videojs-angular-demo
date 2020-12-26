@@ -1,7 +1,8 @@
 import { AfterViewInit, Component, ElementRef, Input, OnDestroy, ViewChild } from '@angular/core';
 import { VideoJsOptions } from "src/models/videojs-options";
 import CustomVideoJsComponent from "./custom-video-js-components";
-declare const videojs: any;
+import "./seek-plugin";
+import { videoJs } from './videojs';
 
 @Component({
   selector: 'app-video-player',
@@ -19,11 +20,19 @@ export class VideoPlayerComponent implements OnDestroy, AfterViewInit {
   ngAfterViewInit(): void {
     CustomVideoJsComponent.registerTitleComponent();
     CustomVideoJsComponent.registerCustomButton();
-    this.player = videojs(this.target.nativeElement, this.options, this.onPlayerReady.bind(this));
+    this.player = videoJs(this.target.nativeElement, this.options, this.onPlayerReady.bind(this));
+    this.player.customSeekButtons({
+      forward: 20,
+      backward: 15,
+      fwdBtnPosition: 1,
+      bwdBtnPosition: 1,
+      fwdBtnTooltip: `Seek 20 seconds forward`,
+      bwdBtnTooltip: `Seek 15 seconds backward`
+    });
   }
 
   onPlayerReady() {
-    console.log('Player is ready. Do something here.');
+    console.log('Player is ready.');
     this.player.addChild('TitleBar', { text: 'Custom title bar component.' });
     this.player.addChild('CustomButton');
   }

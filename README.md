@@ -12,6 +12,8 @@ The branches used are as follows:
   
 - `feature/custom-components` - this branch contains example for adding custom components to the video player. this branch adds a custom title bar and a button component.
   
+- `feature/custom-plugin` - this branch demonstrates the creation and usage of a custom plugin. It also demonstrates the use of ES6 classes for custom components and plugin creation.
+  
 - `main` - this branch contains the merge of all feature branches.
 
 ## How to use
