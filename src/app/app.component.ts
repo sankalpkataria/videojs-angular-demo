@@ -22,6 +22,7 @@ export class AppComponent {
         back: 10
       }
     },
+    inactivityTimeout: 0,
     userActions: {
       doubleClick: true, // to toggle full screen on double click
       hotkeys: function (event: any) {

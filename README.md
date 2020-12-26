@@ -8,11 +8,13 @@ The branches used are as follows:
   
 - `feature/user-actions-hotkeys` - this branch contains example for listening and performing actions on press of different keyboard keys.
 
-- `feature/seek-plugin` - this branch demonstrate addition and usage of seek plugin.
+- `feature/seek-plugin` - this branch demonstrate addition and usage of an already available seek plugin.
   
 - `feature/custom-components` - this branch contains example for adding custom components to the video player. this branch adds a custom title bar and a button component.
-  
+
 - `feature/player-theme` - this branch demonstrates usage of different videojs themes.
+  
+- `feature/custom-plugin` - this branch demonstrates the creation and usage of a custom plugin. It also demonstrates the use of ES6 classes for custom components and plugin creation.
   
 - `main` - this branch contains the merge of all feature branches.
 

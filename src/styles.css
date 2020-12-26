@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~video.js/dist/video-js.css';
 @import '~videojs-seek-buttons/dist/videojs-seek-buttons.css';
+@import './app/video-player/seek-plugin/styles.css';
+
 /* import desired theme and use vjs-theme-<ThemeName> class on <video> tag*/
 @import '~@videojs/themes/dist/city/index.css';
 /* @import '~@videojs/themes/dist/fantasy/index.css'; */
