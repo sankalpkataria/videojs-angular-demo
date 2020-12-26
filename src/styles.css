@@ -3,6 +3,12 @@
 @import '~videojs-seek-buttons/dist/videojs-seek-buttons.css';
 @import './app/video-player/seek-plugin/styles.css';
 
+/* import desired theme and use vjs-theme-<ThemeName> class on <video> tag*/
+@import '~@videojs/themes/dist/city/index.css';
+/* @import '~@videojs/themes/dist/fantasy/index.css'; */
+/* @import '~@videojs/themes/dist/forest/index.css'; */
+/* @import '~@videojs/themes/dist/sea/index.css'; */
+
 .vjs-title-bar {
     font-size: 2.0em;
     padding: 8px;
