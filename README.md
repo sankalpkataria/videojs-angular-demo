@@ -16,6 +16,8 @@ The branches used are as follows:
   
 - `feature/custom-plugin` - this branch demonstrates the creation and usage of a custom plugin. It also demonstrates the use of ES6 classes for custom components and plugin creation.
   
+- `feature/custom-plugin-2` - this branch demonstrates the creation and usage of more advanced custom plugin which can be used to add notes on video at a particular point of time.
+  
 - `main` - this branch contains the merge of all feature branches.
 
 ## How to use

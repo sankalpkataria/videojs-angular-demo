@@ -2,6 +2,7 @@ import { AfterViewInit, Component, ElementRef, Input, OnDestroy, ViewChild } fro
 import { VideoJsOptions } from "src/models/videojs-options";
 import CustomVideoJsComponent from "./custom-video-js-components";
 import "./seek-plugin";
+import "./notes-plugin";
 import { videoJs } from './videojs';
 
 @Component({
@@ -29,6 +30,7 @@ export class VideoPlayerComponent implements OnDestroy, AfterViewInit {
       fwdBtnTooltip: `Seek 20 seconds forward`,
       bwdBtnTooltip: `Seek 15 seconds backward`
     });
+    this.player.notesButton({});
   }
 
   onPlayerReady() {

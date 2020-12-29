@@ -1,0 +1,40 @@
+@import url(https://fonts.googleapis.com/css?family=Material+Icons);
+.video-js .vjs-notes-btn {
+    font-family: 'Material Icons';
+    font-size: 1.4em;
+    width: 40px;
+    cursor: pointer;
+}
+
+/* for content refer https://github.com/google/material-design-icons/tree/master/font */
+.video-js .vjs-notes-btn.notes-icon::before {
+    content: '\f1fc';
+}
+
+.video-js .vjs-notes-wrapper {
+    position: absolute;
+    bottom: -84px;
+    display: inline-flex;
+}
+
+.video-js .vjs-notes-wrapper .vjs-notes-input {
+    min-height: 78px;
+}
+.video-js .vjs-notes-wrapper .vjs-notes-save-btn {
+    width: 120px;
+    height: 40px;
+    margin: 0 4px;
+    font-size: 1.6em;
+    background: black;
+    cursor: pointer;
+}
+
+.video-js .vjs-notes-wrapper .vjs-notes-current-time {
+    width: 40px;
+    height: 40px;
+    margin: 0 4px;
+    padding: 12px 4px;
+    font-size: 1.6em;
+    background: black;
+    border-radius: 40%;
+}

@@ -16,7 +16,7 @@ class CustomVideoJsComponent {
   private createTitleComponent() {
     const videoJsComponent = videoJs.getComponent('Component');
     return videoJs.extend(videoJsComponent, {
-      constructor: function (_: any, options: any) {
+      constructor: function (_: ReturnType<typeof videoJs.player>, options: any) {
         videoJsComponent.apply(this, arguments);
         if (options.text) {
           this.updateTextContent(options.text);
@@ -37,7 +37,7 @@ class CustomVideoJsComponent {
   private createButtonComponent() {
     const Button = videoJs.getComponent('Button');
     return videoJs.extend(Button, {
-      constructor: function (player: any, options: any) {
+      constructor: function (player: ReturnType<typeof videoJs.player>, options: any) {
         if (options.show === undefined) {
           options.show = false;
         }
@@ -61,7 +61,7 @@ class CustomVideoJsComponent {
           }
         );
       },
-      showHideLog: function (player: any, show: boolean) {
+      showHideLog: function (player: ReturnType<typeof videoJs.player>, show: boolean) {
           if (show) {
             console.log(`Current time is ${player.currentTime()}`);
           } else {
