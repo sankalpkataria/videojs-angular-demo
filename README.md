@@ -18,6 +18,8 @@ The branches used are as follows:
   
 - `feature/custom-plugin-2` - this branch demonstrates the creation and usage of more advanced custom plugin which can be used to add notes on video at a particular point of time.
   
+- `feature/custom-plugin-3` - this branch demonstrates the creation and usage of more advanced custom plugin which lets user to see video thumbnails(video sprites) when mouse is moved over seek bar. Code examples are taken from [here](https://weasel.firmfriends.us/Private3-BB/). For creating video sprites, read [this](http://weasel.firmfriends.us/GeeksHomePages/subj-video-and-audio.html#implementing-video-thumbnails)
+  
 - `main` - this branch contains the merge of all feature branches.
 
 ## How to use

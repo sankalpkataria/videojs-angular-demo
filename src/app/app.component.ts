@@ -12,10 +12,16 @@ export class AppComponent {
     loadingSpinner: true,
     height: "480",
     width: "640",
-    sources: [{
-      src: 'https://d2zihajmogu5jn.cloudfront.net/bipbop-advanced/bipbop_16x9_variant.m3u8',
-      type: 'application/x-mpegURL'
-    }],
+    sources: [
+      // {
+      // src: 'https://d2zihajmogu5jn.cloudfront.net/bipbop-advanced/bipbop_16x9_variant.m3u8',
+      // type: 'application/x-mpegURL'
+      // },
+      {
+      src: 'https://storage.googleapis.com/hubert-raymond-webpage/The_Hustler(1961)---H264.mp4',
+      type: 'video/mp4'
+      },
+    ],
     plugins: {
       seekButtons: {
         forward: 10,

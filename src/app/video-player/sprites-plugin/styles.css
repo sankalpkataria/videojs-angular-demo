@@ -1,0 +1,8 @@
+.video-js .vjs-sprites {
+    width: 24%;
+    height: 24%;
+    position: relative;
+    background: rgb(108, 42, 184);
+    top: 58%;
+    border: 1px solid DarkGray;
+}
