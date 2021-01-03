@@ -3,6 +3,7 @@ import { VideoJsOptions } from "src/models/videojs-options";
 import CustomVideoJsComponent from "./custom-video-js-components";
 import "./seek-plugin";
 import "./notes-plugin";
+import "./sprites-plugin";
 import { videoJs } from './videojs';
 
 @Component({
@@ -31,6 +32,9 @@ export class VideoPlayerComponent implements OnDestroy, AfterViewInit {
       bwdBtnTooltip: `Seek 15 seconds backward`
     });
     this.player.notesButton({});
+    this.player.sprites({
+      spritesUrl: 'https://storage.googleapis.com/hubert-raymond-webpage/The_Hustler(1961)-sprites-256x144.png'
+    });
   }
 
   onPlayerReady() {
